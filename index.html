@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> 
+</head>
+<body>
+  <header>
+    <h1>User Subscription</h1>
+  </header>
+  <section class="booking-form">
+    <h2>Course Booking Form</h2>
+    <form id="booking-form" action="mailto:ajaysasan2010@live.co.uk" method="post" onsubmit="return validateAllFields()">
+      <section class="name">
+        <label for="title">Name</label>
+        <input type="text" id="title" placeholder="Enter Your Name" required onblur="validateName()">
+      </section>
+      <section class="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+      </section>
+      <section class="card">
+        <label for="creditCard">Card:</label>
+        <input type="text" id="creditCard-number" placeholder="Enter a Proxy Credit Card Number" required onblur="validateCardNumber()">
+      </section>
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+  </section> 
+</body>
+</html>
